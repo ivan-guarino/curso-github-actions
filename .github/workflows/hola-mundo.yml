@@ -1,0 +1,15 @@
+name: Demo Github Actions Workflow
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  hello: 
+    name: Ejecutar Hello Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mostrar un mensaje de bienvenida
+      run: echo "Bienvenido a Github Actions"
